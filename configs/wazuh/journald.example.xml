@@ -1,0 +1,5 @@
+<!-- Merge inside ossec_config only if journald is not already collected. -->
+<localfile>
+  <location>journald</location>
+  <log_format>journald</log_format>
+</localfile>

@@ -1,0 +1,8 @@
+<group name="soc_lab03,">
+  <rule id="100102" level="10">
+    <program_name>soclab03</program_name>
+    <match>SOC_LAB_03_TEST</match>
+    <description>SOC Lab 03: Wazuh to Shuffle automation test</description>
+    <group>soc_automation_test,</group>
+  </rule>
+</group>

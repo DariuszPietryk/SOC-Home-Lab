@@ -1,0 +1,13 @@
+{
+  "rule": {
+    "id": "100101",
+    "level": 13,
+    "description": "SOC Lab: Encoded PowerShell command detected"
+  },
+  "agent": {
+    "name": "WIN11-SOC"
+  },
+  "mitre": {
+    "id": "T1059.001"
+  }
+}

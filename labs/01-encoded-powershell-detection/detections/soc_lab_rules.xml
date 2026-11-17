@@ -1,0 +1,12 @@
+<!-- Validated rule variant (2026-11-03): inherits from built-in Wazuh rule 92057. -->
+<!-- This is narrower than an independent encoded-PowerShell detection. -->
+<group name="soc_lab,powershell,sysmon,">
+  <rule id="100101" level="13">
+    <if_sid>92057</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)-encodedcommand\s+</field>
+    <description>SOC Lab: Encoded PowerShell command detected</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+  </rule>
+</group>

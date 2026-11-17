@@ -1,0 +1,13 @@
+# EXAMPLE ONLY. Merge with local configuration; preserve management vmbr0.
+# Substitute LAB_USB_NIC and LAB_BRIDGE_IP_CIDR before use.
+# No default gateway is configured on this lab bridge.
+auto LAB_USB_NIC
+iface LAB_USB_NIC inet manual
+
+auto vmbr1
+iface vmbr1 inet static
+    address LAB_BRIDGE_IP_CIDR
+    bridge-ports LAB_USB_NIC
+    bridge-stp off
+    bridge-fd 0
+# If no host address is needed, use inet manual and omit address.
